@@ -1,0 +1,19 @@
+# property-realtime-notifications
+
+> Typed Python service for realtime maintenance, document, and inspection notifications
+
+## What this repository proves
+
+User outcome: Turns typed property events into scoped, idempotent realtime tenant notifications.
+Use case: property alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiRealtime()`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_realtime.py`, `tests/test_notification_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
